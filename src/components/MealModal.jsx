@@ -10,16 +10,18 @@ export default function MealModal({ meal, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4">
+      <div className="bg-white text-black rounded-xl max-w-2xl w-full p-6 overflow-y-auto max-h-[90vh]">
         <button
           onClick={onClose}
-          className="mb-4 text-red-500 font-semibold"
+          className="mb-4 text-red-600 font-semibold"
         >
           Close ✖
         </button>
 
-        <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          {meal.strMeal}
+        </h2>
 
         <img
           src={meal.strMealThumb}
